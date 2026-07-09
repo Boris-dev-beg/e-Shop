@@ -1,0 +1,45 @@
+section.advantages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30rem;
+  background: #fff;
+}
+.advantages .container {
+  gap: 20px;
+}
+.advantages .container .advantage {
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  background: #f8f8f8e8;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  height: 100%;
+}
+.advantages .container .advantage.main {
+    width: 60%;
+  height: 30rem;
+}
+.advantages .container .second {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+  height: 100%;
+}
+.advantages .container .advantage img {
+  position: absolute;
+  object-fit: cover;
+  margin-left: auto;
+  bottom: 0;
+  right: 0;
+    width: 70%;
+    height: 100%;
+}
+.advantage div.text-zone {
+  margin: 30px 20px;
+}

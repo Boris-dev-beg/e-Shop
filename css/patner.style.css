@@ -1,0 +1,25 @@
+section.patners{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patners .container{
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.patners .container span{
+    position: relative;
+    width: 100px;
+    height: 50px;
+}
+.patners .container span img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
