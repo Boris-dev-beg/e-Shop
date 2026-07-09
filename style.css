@@ -2,11 +2,12 @@
 @import url("./css/hero.style.css");
 @import url('./css/patner.style.css');
 @import url('./css/advantages.styls.css');
+@import url('./css/product.style.css');
 
 :root {
   --accent: #ff4848;
   --primary: #000;
-  --secondary: #9e9e9e;
+  --secondary: #666;
   --text-accent: #fff;
 }
 
@@ -27,6 +28,14 @@ body {
   align-items: center;
   justify-content: center;
   max-width: 99.3vw;
+  overflow-x: hidden;
+}
+section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
 }
 
 .container {
@@ -38,6 +47,7 @@ body {
 
 /* ! MAIN */
 main{
+  background-color: #fbfbfb;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -78,10 +88,6 @@ main{
   padding: 8px 14px;
   margin-top: 25px;
   border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
   &:hover {
     opacity: 0.8;
   }

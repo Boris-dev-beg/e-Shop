@@ -1,25 +1,35 @@
-section.patners{
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+section.patners {
+  height: 7rem;
 }
 
-.patners .container{
-    justify-content: space-between;
-    padding: 20px 0;
+.patners .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 0 20px;
 }
 
-.patners .container span{
-    position: relative;
-    width: 100px;
-    height: 50px;
+.patners .container span {
+  position: relative;
+  width: auto;
+  max-width: 150px;
+  height: 70px;
 }
-.patners .container span img{
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.patners .container span img {
+  position: absolute;
+  inset: 0;
+  width: 90px;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 430px) {
+  .patners .container {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (min-width: 40rem) {
+  .patners .container {
+    padding: 10px 0;
+    width: 80%;
+  }
 }

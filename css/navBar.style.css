@@ -3,7 +3,6 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 7.5rem;
   padding: 10px;
   align-items: center;
   justify-content: center;
@@ -11,17 +10,31 @@ header {
 }
 /* ? Search Bar */
 header .container {
-  flex-direction: column;
+  width: 90%;
+  flex-direction: column-reverse;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 6px 10px;
+  border-radius: 70%;
+  &:hover{
+    background: var(--secondary);
+  }
+}
+
+.menu i{
+  color: #fff;
 }
 
 .container .search-container {
   width: 100%;
-  padding: 15px 10px;
+  padding: 5px 10px;
   display: flex;
   gap: 40px;
   justify-content: space-evenly;
   align-items: center;
-  border-bottom: solid 0.5px #dadada;
 }
 .container .search-container h1 {
   font-size: 30px;
@@ -30,27 +43,26 @@ header .container {
   text-wrap: nowrap;
   color: var(--text-accent);
 }
+.search-container .second {
+  display: none;
+  width: 100%;
+}
 .search-container form {
   width: 100%;
   overflow: hidden;
-  background: var(--text-accent);
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
   display: flex;
   align-items: center;
 }
 .search-container form div {
   width: 100%;
   background: var(--text-accent);
-  display: flex;
+  display: none;
   align-items: center;
   padding: 8px;
   gap: 20px;
 }
 .search-container form select {
+  display: none;
   padding: 5px;
   color: #000;
 }
@@ -66,20 +78,19 @@ input:focus {
 }
 
 .search-container form button {
-  background: #252525;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px;
-  height: 2.7rem;
+  height: 2.9rem;
   width: 3.7em;
+  border-radius: 100%;
   &:hover {
-    background: var(--primary);
+    background-color: #535353;
   }
 }
-.search-container button img{
-  width: 15px;
-  height: 15px;
+.search-container button img {
+  width: 20px;
+  height: 20px;
 }
 .other-icons {
   display: flex;
@@ -87,16 +98,16 @@ input:focus {
   justify-content: center;
   gap: 20px;
 }
-.other-icons span{
+.other-icons span {
   padding: 10px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .other-icons span:hover {
   background: #535353;
@@ -105,25 +116,87 @@ input:focus {
   width: 25px;
   height: 25px;
 }
-
 /* ? Link Bar */
 .link-container {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
   padding: 15px;
 }
 .link-container nav {
+  width: 100%;
   display: flex;
   gap: 25px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .link-container nav a {
-    color: var(--text-accent);
+  color: var(--text-accent);
 }
-nav a:hover{
-    text-decoration: underline;
-    font-weight: 700;
+nav a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media (min-width: 40rem) {
+  header{
+  height: 7.5rem;
+  }
+  /* ? Search Bar */
+  header .container {
+    width: 80%;
+    flex-direction: column;
+  }
+  .link-container {
+    display: flex;
+  }
+  .search-container .second {
+    display: flex;
+  }
+  .container .search-container {
+    padding: 15px 10px;
+    border-bottom: solid 0.5px #dadada;
+    border-top: 0;
+  }
+  .search-container form {
+    background: var(--text-accent);
+    border-radius: 8px;
+  }
+  .search-container form select {
+    display: flex;
+  }
+  .search-container form div {
+    display: flex;
+  }
+  .search-container form button {
+    background: #252525;
+    padding: 6px;
+    height: 2.8rem;
+    width: 3.7em;
+    border-radius: 0;
+    &:hover {
+      background: var(--primary);
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .search-container form button {
+    height: 2.9rem;
+    padding-left: 13px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* ? Link Bar */
+  .link-container {
+    flex-direction: row;
+  }
+  .link-container nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+  }
 }
