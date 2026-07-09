@@ -46,6 +46,7 @@ header .container {
 .search-container .second {
   display: none;
   width: 100%;
+  gap: 10px;
 }
 .search-container form {
   width: 100%;
@@ -141,6 +142,9 @@ nav a:hover {
 }
 
 @media (min-width: 40rem) {
+  .menu{
+    display: none;
+  }
   header{
   height: 7.5rem;
   }
@@ -154,13 +158,16 @@ nav a:hover {
   }
   .search-container .second {
     display: flex;
+    width: 100%;
   }
   .container .search-container {
     padding: 15px 10px;
+    width: 100%;
     border-bottom: solid 0.5px #dadada;
     border-top: 0;
   }
   .search-container form {
+    width: 100%;
     background: var(--text-accent);
     border-radius: 8px;
   }

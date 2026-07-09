@@ -1,8 +1,10 @@
 @import url("./css/navBar.style.css");
 @import url("./css/hero.style.css");
-@import url('./css/patner.style.css');
-@import url('./css/advantages.styls.css');
-@import url('./css/product.style.css');
+@import url("./css/patner.style.css");
+@import url("./css/advantages.styls.css");
+@import url("./css/product.style.css");
+@import url("./css/footer.style.css");
+@import url("./css/testimonial.style.css");
 
 :root {
   --accent: #ff4848;
@@ -30,7 +32,7 @@ body {
   max-width: 99.3vw;
   overflow-x: hidden;
 }
-section{
+section {
   width: 100%;
   display: flex;
   align-items: center;
@@ -46,15 +48,15 @@ section{
 }
 
 /* ! MAIN */
-main{
+main {
   background-color: #fbfbfb;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
 }
 .text-zone {
   max-width: 20rem;

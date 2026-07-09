@@ -21,7 +21,7 @@ section.advantages {
   width: 100%;
 }
 .advantages .container .advantage.main {
-  height: 28rem;
+  height: 26rem;
 }
 .advantages .container .second {
   display: flex;
@@ -30,9 +30,12 @@ section.advantages {
   width: 100%;
   height: 100%;
 }
+.advantages .container .second .advantage{
+  height: 13rem;
+}
 .advantage img {
   margin-left: auto;
-  width: 15rem;
+  width: 13rem;
   height: 100%;
 }
 .advantage.advantage.main img {
@@ -48,24 +51,21 @@ section.advantages {
 .advantage span div {
   position: inherit;
   inset: 0;
-  background: linear-gradient(to right, #fff, transparent);
+  background: linear-gradient(to right, #e6e6e6, transparent);
 }
-
 .advantage div.text-zone {
   margin: 30px 20px;
   max-width: 14rem;
 }
 
 @media (min-width: 40rem) {
-  .container .second {
-    width: 20%;
-  }
   .advantage img {
     margin-left: auto;
-    height: 100%;
+    height: 13rem;
+    width: 11rem;
   }
-  .advantages .container .advantage {
-    width: 70%;
+  .advantages .container .second {
+    flex-direction: row;
   }
 }
 @media (min-width: 48rem) {
@@ -81,8 +81,12 @@ section.advantages {
   .advantage img {
     width: 10rem;
   }
-  .advantages .container .advantage {
-    width: 100%;
+  .advantage.advantage.main img {
+    margin-top: auto;
+  }
+
+  .advantages .container .second {
+    flex-direction: column;
   }
 }
 @media (min-width: 60rem) {
@@ -92,6 +96,13 @@ section.advantages {
   }
   .advantage img {
     width: 15rem;
+  }
+  .advantage.main .text-zone {
+    margin: 50px;
+  }
+
+  .advantage.advantage.main img {
+    margin-right: 50px;
   }
 }
 
