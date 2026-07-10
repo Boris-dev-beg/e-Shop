@@ -1,0 +1,28 @@
+{
+  "name": "e-shop",
+  "version": "1.0.0",
+  "description": "electronic web site",
+  "homepage": "https://github.com/Boris-dev-beg/e-Shop#readme",
+  "bugs": {
+    "url": "https://github.com/Boris-dev-beg/e-Shop/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boris-dev-beg/e-Shop.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/global.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "tailwindcss": "^4.3.2"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.5.1": true
+  }
+}

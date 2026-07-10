@@ -4,55 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>e-shop</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./output.css" />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
     />
   </head>
-  <body>
+  <body class="flex flex-col max-w-screen min-h-screen">
     <!-- ! Header -->
-    <header>
-      <div class="container">
+    <header
+      class="w-full flex bg-accent py-2.5 px-5 items-center justify-center"
+    >
+      <div class="flex-col gap-2 w-full">
         <!-- ! Search Bar -->
-        <div class="search-container">
-          <h1>e-shop</h1>
+        <div
+          class="text-white flex justify-between items-center gap-10 sm:pb-3 sm:px-2"
+        >
+          <h1 class="font-bold text-2xl sm:text-3xl md:text-5xl cursor-pointer text-nowrap">
+            e-shop
+          </h1>
 
-          <div class="menu">
-            <i class="fi fi-rr-menu-burger"></i>
+          <!-- ! Hamburger Menu -->
+          <div
+            class="flex sm:hidden p-2 hover:bg-gray-100 rounded-md pb-0 group"
+          >
+            <i
+              class="fi fi-rr-menu-burger text-2xl size-2/2 group-hover:text-black"
+            ></i>
           </div>
-          <div class="second">
-            <form action="#">
-              <div class="input-entry">
-                <select name="" id="">
+          <div class="hidden sm:flex items-center justify-between w-full md:w-3/4 lg:gap-17">
+            <!-- ! Search form -->
+            <form
+              action="#"
+              class="bg-white text-black rounded-2xl flex items-center justify-between overflow-hidden h-10 md:w-full"
+            >
+              <div
+                class="input-entry flex px-4 md:px-2 gap-1 md:gap-3 w-full h-full focus-within:border-accent focus-within:border rounded-l-2xl"
+              >
+                <select name="" id="" class="appearance-none hidden md:flex w-1/5 px-2 h-full outline-none focus:outline-none focus:border-r-2 focus:border-accent"">
                   <option value="">All Category</option>
                   <option value="">Phone</option>
                 </select>
-                <input type="text" placeholder="Search Products..." />
+                <input
+                  type="text"
+                  placeholder="Search Products..."
+                  class="w-full h-full outline-none focus:outline-none focus:border-none"
+                />
               </div>
-              <button>
-                <img src="./images/search.png" alt="serch" />
+              <button
+                class="bg-primary text-white h-full w-13 hover:bg-secondary flex items-center justify-center"
+              >
+                <i class="fi fi-rr-search text-lg pt-1"></i>
               </button>
             </form>
-            <div class="other-icons">
+            <!-- ! Others icons -->
+            <div
+              class="flex items-center justify-center gap-2 px-4 text-xl *:p-2 *:hover:bg-secondary/60 *:rounded-full *:pb-0 *:hover:scale-105"
+            >
               <span>
-                <img src="./images/shopping-cart.png" alt="shopping cart" />
+                <i class="fi fi-rr-shopping-cart"></i>
               </span>
               <span>
-                <img src="./images/user.png" alt="user" />
+                <i class="fi fi-rr-user"></i>
               </span>
             </div>
           </div>
         </div>
         <!-- ! Links Bar -->
-        <div class="link-container">
-          <nav>
-            <a href="#">All Categories</a>
+        <div
+          class="link-container hidden sm:flex text-white w-full items-center justify-center gap-2 pt-3 border-t border-white md:*:gap-5 md:justify-between md:px-15"
+        >
+          <nav
+            class="flex gap-2.5 text-lg *:hover:underline *:hover:font-bold font-semibold"
+          >
+            <a href="#" class="font-bold underline">All Categories</a>
             <a href="#">Products</a>
             <a href="#">Blog</a>
             <a href="#">Contact</a>
           </nav>
-          <nav>
+          <nav
+            class="hidden lg:flex gap-2.5 text-lg *:hover:underline *:hover:font-bold font-semibold"
+          >
             <a href="#">LIMITED SALE</a>
             <a href="#">Best Seller</a>
             <a href="#">New Arrival</a>
@@ -62,42 +94,37 @@
     </header>
     <!-- ! Header -->
     <!-- ! Main -->
-    <main>
+    <main class="flex flex-col gap-5 items-center flex-1 bg-gray-50/90">
       <!-- ! HERO SECTION -->
-      <section id="hero" class="hero">
-        <div class="container">
-          <button class="action-btn left">
-            <img src="./images/angle-left.png" alt="left" />
+      <section id="hero" class="flex w-full h-[75vh] items-center justify-center">
+        <div class="flex gap-1 relative w-full h-full items-center justify-center">
+          <button
+            class="absolute left-10 bottom-5 md:bottom-1/3 lg:bottom-1/2 md:left-1/9 pt-2 pb-1 px-2.5 rounded-full bg-white hover:bg-gray-50 z-20 hover:scale-105 flex items-center justify-center"
+          >
+            <i class="fi fi-rr-angle-left font-bold"></i>
           </button>
-          <div class="hero-container">
+          <!-- ! Hero container -->
+          <div class="flex items-center overflow-hidden h-full w-full">
             <!-- ! Hero elements -->
-            <div class="hero-item">
-              <!-- ? image -->
-              <div class="bg-container">
-                <!-- ? Div to simulate the background gradiant -->
-                <div class="bg-simulation"></div>
-                <!-- ? Image -->
-                <div class="image-bg">
-                  <img
-                    src="./images/products/Apple_watch.png"
-                    alt="hero image"
-                  />
-                </div>
+            <div class="relative w-full h-full flex">
+              <div class="absolute inset-0 flex">
+                <img src="../images/products/Apple_watch.png" alt="hero image" class="w-85 lg:w-100 lg:mt-6  ml-auto mt-auto sm:mr-5 sm:mb-5 lg:mr-20 min-[75rem]:mr-60" />
               </div>
               <!-- ? Text -->
-              <div class="hero-text text-zone">
-                <h1>Elevate Your Tech Gadget Game</h1>
-                <p>
+              <div class="absolute z-10 flex gap-4 flex-col items-start lg:px-50 py-13 inset-0 px-10 max-md:bg-slate-900/50 md:bg-linear-to-l to-slate-900 from-transparent">
+                <h1 class="font-black text-5xl md:text-6xl text-accent md:max-w-xl">Elevate Your Tech Gadget Game</h1>
+                <p class="font-semibold text-slate-100 max-w-2xs md:max-w-md text-start">
                   Shop the latest technology available here in e-shop. Sale &
                   discount offers everyday.
                 </p>
-                <button>Shop Now</button>
+                <button class="bg-accent text-lg py-2 px-6 font-bold text-text-accent rounded-md hover:bg-accent/90">Shop Now</button>
               </div>
             </div>
             <!-- ! Hero elements -->
           </div>
-          <button class="action-btn right">
-            <img src="./images/angle-right.png" alt="rigth" />
+          <button
+            class="absolute z-20 right-10 bottom-5 md:bottom-1/3 lg:bottom-1/2 md:right-1/9 py-2 px-2.5 rounded-full bg-white hover:bg-gray-50 hover:scale-105 flex items-center justify-center pb-1">
+            <i class="fi fi-rr-angle-right font-bold"></i>
           </button>
         </div>
       </section>
