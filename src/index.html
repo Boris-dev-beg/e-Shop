@@ -216,9 +216,39 @@
         </div>
       </section>
       <!-- ! Advantages Section -->
-      <!-- ! NEW PRODUCT SECTION -->
-      <section class="new-products">
-        <div class="container">
+      <!-- ! PRODUCTS SECTION -->
+      <section
+        class="w-full px-5 max-[430px]:px-1 flex items-center justify-center"
+      >
+        <div class="w-full flex flex-col items-center justify-center gap-5">
+          <!-- ! Products header -->
+          <div class="flex max-[430px]:flex-col items-center justify-between py-2.5 w-full">
+            <h1 class="text-accent text-2xl tracking-wide font-bold capitalize">
+              Featured Products
+            </h1>
+            <span class="flex items-center justify-between gap-2">
+              <button
+                class="flex items-center justify-center hover:bg-slate-200 text-black px-3 pt-2 pb-1 rounded-md transition-colors duration-300 group"
+              >
+                <i class="fi fi-rr-angle-left text-xs group-hover:text-sm"></i>
+              </button>
+              <button
+                class="flex items-center justify-center hover:bg-slate-200 text-black pt-2 pb-1 px-3 rounded-md transition-colors duration-300 group"
+              >
+                <i class="fi fi-rr-angle-right text-xs group-hover:text-sm"></i>
+              </button>
+            </span>
+          </div>
+          <!-- ! Products body -->
+          <div
+            class="grid grid-cols-1 max-[430px]:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-[430px]:gap-1 place-items-center px-4 max-[430px]:px-0"
+            id="products-container"
+          >
+            <!-- ? Products -->
+            <!-- ? Products -->
+          </div>
+        </div>
+        <!-- <div class="container">
           <div class="container-header">
             <h2>New Product</h2>
             <span>
@@ -230,7 +260,6 @@
             </span>
           </div>
           <div class="container-body">
-            <!-- ? Cards -->
             <div class="card">
               <div class="card-image">
                 <img src="./images/products/mouse_1.jpeg" alt="phone" />
@@ -285,13 +314,12 @@
                 <i class="fi fi-rr-share"></i>
               </div>
             </div>
-            <!-- ? Cards -->
           </div>
-        </div>
+        </div> -->
       </section>
-      <!-- ! NEW PRODUCT SECTION -->
+      <!-- ! PRODUCTS SECTION -->
       <!-- ! Testimonial -->
-      <section class="h-[90vh] lg:h-[60vh]">
+      <section class="h-[90vh] max-[430px]:h-[105vh] lg:h-[60vh] max-[430px]:overflow-hidden">
         <div class="flex flex-col items-center justify-center gap-5">
           <!-- ? Header -->
           <div class="flex flex-col items-center justify-center">
@@ -299,7 +327,10 @@
             <p class="text-2xl font-bold">Our Client About Us</p>
           </div>
           <!-- ? Body -->
-          <div class="flex-1 grid grid-cols-2 md:grid-cols-3 place-items-center gap-x-5 gap-y-15 px-2.5 lg:px-15 lg:gap-x-18 pb-5 pt-10" id="testimonial-container">
+          <div
+            class="flex-1 grid grid-cols-2 max-[430px]:grid-cols-1 md:grid-cols-3 place-items-center gap-x-5 gap-y-15 px-2.5 lg:px-15 lg:gap-x-18 pb-5 pt-10"
+            id="testimonial-container"
+          >
             <!-- ? Testiminials -->
           </div>
         </div>
@@ -321,7 +352,9 @@
               necessitatibus.
             </p>
           </div>
-          <div class="grid grid-cols-3 gap-5 lg:gap-10 lg:px-10 place-items-center items-start">
+          <div
+            class="grid grid-cols-3 gap-5 lg:gap-10 lg:px-10 place-items-center items-start"
+          >
             <ul class="flex flex-col gap-1 *:hover:underline lowercase text-sm">
               <li class="hover:underline-offset-0 font-bold uppercase">
                 Navigation
@@ -353,14 +386,21 @@
           </div>
         </div>
         <!-- ! Footer Bottom -->
-        <div class="flex flex-col md:flex-row w-full gap-3 py-3 border-t border-slate-50 md:justify-center md:items-center">
-          <form action="" class="flex w-full md:pb-5 md:flex-row items-center gap-3 flex-col">
+        <div
+          class="flex flex-col md:flex-row w-full gap-3 py-3 border-t border-slate-50 md:justify-center md:items-center"
+        >
+          <form
+            action=""
+            class="flex w-full md:pb-5 md:flex-row items-center gap-3 flex-col"
+          >
             <input
               type="text"
               placeholder="Enter your Email..."
               class="bg-slate-50 text-secondary px-4 py-2 w-full rounded-full"
             />
-            <button class="rounded-full bg-white text-primary font-medium tracking-wide py-1.5 w-fit px-10">
+            <button
+              class="rounded-full bg-white text-primary font-medium tracking-wide py-1.5 w-fit px-10"
+            >
               Subscribe
             </button>
           </form>
