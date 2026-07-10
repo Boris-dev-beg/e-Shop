@@ -124,15 +124,15 @@
                 <img
                   src="../images/products/Apple_watch.png"
                   alt="hero image"
-                  class="w-85 max-[430px]:w-70 lg:w-100 lg:mt-6 ml-auto mt-auto sm:mr-5 sm:mb-5 lg:mr-20  max-[430px]:mb-10 min-[75rem]:mr-60"
+                  class="w-85 max-[430px]:w-70 lg:w-100 lg:mt-6 ml-auto mt-auto sm:mr-5 sm:mb-5 lg:mr-20 max-[430px]:mb-10 min-[75rem]:mr-60"
                 />
               </div>
               <!-- ? Text -->
               <div
-                class="absolute z-10 flex gap-4 flex-col items-start lg:px-50 py-13 inset-0 px-10  max-[430px]:px-5 max-[430px]:py-5 max-[430px]:text-lg max-md:bg-slate-900/50 md:bg-linear-to-l to-slate-900 from-transparent"
+                class="absolute z-10 flex gap-4 flex-col items-start lg:px-50 py-13 inset-0 px-10 max-[430px]:px-5 max-[430px]:py-5 max-[430px]:text-lg max-md:bg-slate-900/50 md:bg-linear-to-l to-slate-900 from-transparent"
               >
                 <h1
-                  class="font-black text-5xl  max-[430px]:text-3xl md:text-6xl text-accent md:max-w-xl"
+                  class="font-black text-5xl max-[430px]:text-3xl md:text-6xl text-accent md:max-w-xl"
                 >
                   Elevate Your Tech Gadget Game
                 </h1>
@@ -161,7 +161,10 @@
       <!-- ! HERO SECTION -->
       <!-- ! PATNER's SECTION -->
       <section class="flex items-center justify-center w-full">
-        <div class="flex items-center justify-evenly w-full" id="partner-container">
+        <div
+          class="flex items-center justify-evenly w-full"
+          id="partner-container"
+        >
           <!-- ? Images -->
           <!-- ? Images -->
         </div>
@@ -288,40 +291,16 @@
       </section>
       <!-- ! NEW PRODUCT SECTION -->
       <!-- ! Testimonial -->
-      <section class="testimonial">
-        <div class="container">
+      <section class="h-[90vh] lg:h-[60vh]">
+        <div class="flex flex-col items-center justify-center gap-5">
           <!-- ? Header -->
-          <div class="testimonial-header">
-            <h1>Testimonial</h1>
-            <p>Our Client About Us</p>
+          <div class="flex flex-col items-center justify-center">
+            <h1 class="text-accent">Testimonial</h1>
+            <p class="text-2xl font-bold">Our Client About Us</p>
           </div>
           <!-- ? Body -->
-          <div class="testimonial-body">
+          <div class="flex-1 grid grid-cols-2 md:grid-cols-3 place-items-center gap-x-5 gap-y-15 px-2.5 lg:px-15 lg:gap-x-18 pb-5 pt-10" id="testimonial-container">
             <!-- ? Testiminials -->
-            <div class="testimonial-item">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                optio!
-              </p>
-              <h2>Samantha Evans</h2>
-              <h3>example.com</h3>
-            </div>
-            <div class="testimonial-item active">
-              <p class="active">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                optio!
-              </p>
-              <h2 class="active">Samantha Evans</h2>
-              <h3 class="active">example.com</h3>
-            </div>
-            <div class="testimonial-item">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                optio!
-              </p>
-              <h2>Samantha Evans</h2>
-              <h3>example.com</h3>
-            </div>
           </div>
         </div>
       </section>
@@ -329,19 +308,24 @@
     </main>
     <!-- ! Main -->
     <!-- ! Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-first">
-          <div class="first-first-div">
-            <h1>E-shop</h1>
-            <p>
+    <footer class="w-full bg-accent text-text-accent px-5">
+      <div class="flex flex-col w-full items-center gap-3">
+        <!-- ! Footer Top -->
+        <div
+          class="flex flex-col sm:flex-row justify-between w-full py-3 gap-3 md:px-10"
+        >
+          <div class="flex flex-col gap-1.5 max-w-xs">
+            <h1 class="text-2xl md:text-3xl font-bold tracking-wide">e-shop</h1>
+            <p class="line-clamp-3 text-slate-50 text-sm md:text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
               necessitatibus.
             </p>
           </div>
-          <div class="first-second-div">
-            <ul>
-              <li>Navigation</li>
+          <div class="grid grid-cols-3 gap-5 lg:gap-10 lg:px-10 place-items-center items-start">
+            <ul class="flex flex-col gap-1 *:hover:underline lowercase text-sm">
+              <li class="hover:underline-offset-0 font-bold uppercase">
+                Navigation
+              </li>
               <li>
                 <a href=""> Link 1 </a>
               </li>
@@ -352,29 +336,37 @@
                 <a href="">Link</a>
               </li>
             </ul>
-            <ul>
-              <li>Contact</li>
+            <ul class="flex flex-col gap-1 *:hover:underline lowercase text-sm">
+              <li class="hover:underline-offset-0 font-bold uppercase">
+                Contact
+              </li>
               <li><a href="">Link contact</a></li>
               <li><a href="">Link contact</a></li>
             </ul>
-            <ul>
-              <li>Address</li>
+            <ul class="flex flex-col gap-1 *:hover:underline lowercase text-sm">
+              <li class="hover:underline-offset-0 font-bold uppercase">
+                Address
+              </li>
               <li><a href="">Address 1</a></li>
               <li><a href="">Address 2</a></li>
             </ul>
           </div>
         </div>
-        <div class="footer-second">
-          <form action="">
+        <!-- ! Footer Bottom -->
+        <div class="flex flex-col md:flex-row w-full gap-3 py-3 border-t border-slate-50 md:justify-center md:items-center">
+          <form action="" class="flex w-full md:pb-5 md:flex-row items-center gap-3 flex-col">
             <input
               type="text"
-              name=""
-              id=""
               placeholder="Enter your Email..."
+              class="bg-slate-50 text-secondary px-4 py-2 w-full rounded-full"
             />
-            <button>Subscribe</button>
+            <button class="rounded-full bg-white text-primary font-medium tracking-wide py-1.5 w-fit px-10">
+              Subscribe
+            </button>
           </form>
-          <p>&copy; 2026 e-shop. All rights reserved.</p>
+          <p class="text-xs md:text-sm text-center md:text-end w-full">
+            &copy; 2026 e-shop. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
